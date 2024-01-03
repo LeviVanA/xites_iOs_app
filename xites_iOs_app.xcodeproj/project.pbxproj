@@ -22,16 +22,25 @@
 		04879AA42B3E43100074B842 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AA32B3E43100074B842 /* HomeView.swift */; };
 		04879AA82B3E4A8C0074B842 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AA72B3E4A8C0074B842 /* SignUpView.swift */; };
 		04879AAA2B3E4ACB0074B842 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AA92B3E4ACB0074B842 /* SignUpViewModel.swift */; };
-		04879AAC2B3F6F0B0074B842 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AAB2B3F6F0B0074B842 /* UserApiService.swift */; };
+		04879AB92B4477850074B842 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04879AB82B4477850074B842 /* RxSwift */; };
+		04879ABF2B44802A0074B842 /* TransactionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ABE2B44802A0074B842 /* TransactionAPI.swift */; };
+		04879AC12B4480E40074B842 /* TransactionAPITypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AC02B4480E40074B842 /* TransactionAPITypes.swift */; };
+		04879AC32B4487040074B842 /* TransactionAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AC22B4487030074B842 /* TransactionAPIClient.swift */; };
+		04879AC72B44A6400074B842 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AC62B44A6400074B842 /* Registration.swift */; };
+		04879AC92B44AF0B0074B842 /* Dienst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AC82B44AF0B0074B842 /* Dienst.swift */; };
+		04879ACB2B44AF380074B842 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ACA2B44AF380074B842 /* Project.swift */; };
+		04879ACD2B44D7210074B842 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ACC2B44D7210074B842 /* UserAPI.swift */; };
+		04879ACF2B44D73E0074B842 /* UserAPITypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ACE2B44D73E0074B842 /* UserAPITypes.swift */; };
+		04879AD12B44D8BF0074B842 /* UserAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AD02B44D8BF0074B842 /* UserAPIClient.swift */; };
+		04879AD42B44DF3B0074B842 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = 04879AD32B44DF3B0074B842 /* SnackBar */; };
 		048AF09A2B3B30000008893A /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048AF0992B3B30000008893A /* Auth0.plist */; };
 		048AF09F2B3B58790008893A /* RegistrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF09E2B3B58790008893A /* RegistrationsView.swift */; };
 		048AF0A12B3B76430008893A /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A02B3B76430008893A /* ButtonStyle.swift */; };
-		048AF0A32B3C47070008893A /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A22B3C47060008893A /* Registration.swift */; };
-		048AF0A62B3C49DF0008893A /* TransactionAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A52B3C49DF0008893A /* TransactionAPIService.swift */; };
 		048AF0A82B3C4B360008893A /* RegistrationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A72B3C4B360008893A /* RegistrationsViewModel.swift */; };
 		048AF0AA2B3C4C900008893A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A92B3C4C900008893A /* LoadingView.swift */; };
 		048AF0AE2B3C59BA0008893A /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0AD2B3C59BA0008893A /* RegistrationModel.swift */; };
 		048AF0B02B3C74BE0008893A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0AF2B3C74BE0008893A /* RegistrationViewModel.swift */; };
+		048F1FA32B45ADBA00D2DB0F /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1FA22B45ADBA00D2DB0F /* Bearer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,16 +80,23 @@
 		04879AA32B3E43100074B842 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04879AA72B3E4A8C0074B842 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		04879AA92B3E4ACB0074B842 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		04879AAB2B3F6F0B0074B842 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		04879ABE2B44802A0074B842 /* TransactionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPI.swift; sourceTree = "<group>"; };
+		04879AC02B4480E40074B842 /* TransactionAPITypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPITypes.swift; sourceTree = "<group>"; };
+		04879AC22B4487030074B842 /* TransactionAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPIClient.swift; sourceTree = "<group>"; };
+		04879AC62B44A6400074B842 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		04879AC82B44AF0B0074B842 /* Dienst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dienst.swift; sourceTree = "<group>"; };
+		04879ACA2B44AF380074B842 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		04879ACC2B44D7210074B842 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		04879ACE2B44D73E0074B842 /* UserAPITypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPITypes.swift; sourceTree = "<group>"; };
+		04879AD02B44D8BF0074B842 /* UserAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIClient.swift; sourceTree = "<group>"; };
 		048AF0992B3B30000008893A /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		048AF09E2B3B58790008893A /* RegistrationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationsView.swift; sourceTree = "<group>"; };
 		048AF0A02B3B76430008893A /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
-		048AF0A22B3C47060008893A /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
-		048AF0A52B3C49DF0008893A /* TransactionAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPIService.swift; sourceTree = "<group>"; };
 		048AF0A72B3C4B360008893A /* RegistrationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationsViewModel.swift; sourceTree = "<group>"; };
 		048AF0A92B3C4C900008893A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		048AF0AD2B3C59BA0008893A /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		048AF0AF2B3C74BE0008893A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		048F1FA22B45ADBA00D2DB0F /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04879AB92B4477850074B842 /* RxSwift in Frameworks */,
 				04098BEB2B3B24E900212FC6 /* Auth0 in Frameworks */,
+				04879AD42B44DF3B0074B842 /* SnackBar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +134,7 @@
 				04098BBC2AFD886900212FC6 /* xites_iOs_appTests */,
 				04098BC62AFD886900212FC6 /* xites_iOs_appUITests */,
 				04098BA92AFD886100212FC6 /* Products */,
+				04879AB72B4477850074B842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +151,7 @@
 		04098BAA2AFD886100212FC6 /* xites_iOs_app */ = {
 			isa = PBXGroup;
 			children = (
-				048AF0A42B3C49B80008893A /* api */,
+				04879AAD2B445F0F0074B842 /* data */,
 				04098BE82B3B23FC00212FC6 /* xites-iOs-app-Info.plist */,
 				04098BDC2B39D27A00212FC6 /* views */,
 				04098BD92B39CFBB00212FC6 /* components */,
@@ -195,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				04098BDD2B39D29600212FC6 /* LoginView.swift */,
+				048F1FA22B45ADBA00D2DB0F /* Bearer.swift */,
 				04879A9C2B3E3DDF0074B842 /* LoginViewModel.swift */,
 				04879A9E2B3E3E540074B842 /* User.swift */,
 				04879AA72B3E4A8C0074B842 /* SignUpView.swift */,
@@ -209,6 +229,8 @@
 				04098BE62B3B08BB00212FC6 /* RegistrationView.swift */,
 				048AF0AD2B3C59BA0008893A /* RegistrationModel.swift */,
 				048AF0AF2B3C74BE0008893A /* RegistrationViewModel.swift */,
+				04879AC82B44AF0B0074B842 /* Dienst.swift */,
+				04879ACA2B44AF380074B842 /* Project.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -221,23 +243,50 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		04879AAD2B445F0F0074B842 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				04879AAF2B445FD40074B842 /* users */,
+				04879AAE2B445FC70074B842 /* transactions */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		04879AAE2B445FC70074B842 /* transactions */ = {
+			isa = PBXGroup;
+			children = (
+				04879ABE2B44802A0074B842 /* TransactionAPI.swift */,
+				04879AC02B4480E40074B842 /* TransactionAPITypes.swift */,
+				04879AC22B4487030074B842 /* TransactionAPIClient.swift */,
+			);
+			path = transactions;
+			sourceTree = "<group>";
+		};
+		04879AAF2B445FD40074B842 /* users */ = {
+			isa = PBXGroup;
+			children = (
+				04879ACC2B44D7210074B842 /* UserAPI.swift */,
+				04879ACE2B44D73E0074B842 /* UserAPITypes.swift */,
+				04879AD02B44D8BF0074B842 /* UserAPIClient.swift */,
+			);
+			path = users;
+			sourceTree = "<group>";
+		};
+		04879AB72B4477850074B842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		048AF09B2B3B581B0008893A /* Registrations */ = {
 			isa = PBXGroup;
 			children = (
 				048AF09E2B3B58790008893A /* RegistrationsView.swift */,
-				048AF0A22B3C47060008893A /* Registration.swift */,
 				048AF0A72B3C4B360008893A /* RegistrationsViewModel.swift */,
+				04879AC62B44A6400074B842 /* Registration.swift */,
 			);
 			path = Registrations;
-			sourceTree = "<group>";
-		};
-		048AF0A42B3C49B80008893A /* api */ = {
-			isa = PBXGroup;
-			children = (
-				048AF0A52B3C49DF0008893A /* TransactionAPIService.swift */,
-				04879AAB2B3F6F0B0074B842 /* UserApiService.swift */,
-			);
-			path = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +307,8 @@
 			name = xites_iOs_app;
 			packageProductDependencies = (
 				04098BEA2B3B24E900212FC6 /* Auth0 */,
+				04879AB82B4477850074B842 /* RxSwift */,
+				04879AD32B44DF3B0074B842 /* SnackBar */,
 			);
 			productName = xites_iOs_app;
 			productReference = 04098BA82AFD886100212FC6 /* xites_iOs_app.app */;
@@ -333,6 +384,8 @@
 			mainGroup = 04098B9F2AFD886100212FC6;
 			packageReferences = (
 				04098BE92B3B24E900212FC6 /* XCRemoteSwiftPackageReference "Auth0" */,
+				04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */,
 			);
 			productRefGroup = 04098BA92AFD886100212FC6 /* Products */;
 			projectDirPath = "";
@@ -377,24 +430,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04879AAC2B3F6F0B0074B842 /* UserApiService.swift in Sources */,
 				04098BAE2AFD886100212FC6 /* ContentView.swift in Sources */,
+				048F1FA32B45ADBA00D2DB0F /* Bearer.swift in Sources */,
+				04879AC92B44AF0B0074B842 /* Dienst.swift in Sources */,
+				04879AC32B4487040074B842 /* TransactionAPIClient.swift in Sources */,
+				04879AD12B44D8BF0074B842 /* UserAPIClient.swift in Sources */,
 				048AF0A12B3B76430008893A /* ButtonStyle.swift in Sources */,
 				048AF0A82B3C4B360008893A /* RegistrationsViewModel.swift in Sources */,
 				048AF0B02B3C74BE0008893A /* RegistrationViewModel.swift in Sources */,
 				04879AAA2B3E4ACB0074B842 /* SignUpViewModel.swift in Sources */,
 				048AF0AE2B3C59BA0008893A /* RegistrationModel.swift in Sources */,
+				04879AC12B4480E40074B842 /* TransactionAPITypes.swift in Sources */,
+				04879ACF2B44D73E0074B842 /* UserAPITypes.swift in Sources */,
 				04879A9F2B3E3E540074B842 /* User.swift in Sources */,
 				048AF0AA2B3C4C900008893A /* LoadingView.swift in Sources */,
 				04879A9D2B3E3DDF0074B842 /* LoginViewModel.swift in Sources */,
-				048AF0A32B3C47070008893A /* Registration.swift in Sources */,
 				048AF09F2B3B58790008893A /* RegistrationsView.swift in Sources */,
-				048AF0A62B3C49DF0008893A /* TransactionAPIService.swift in Sources */,
+				04879ABF2B44802A0074B842 /* TransactionAPI.swift in Sources */,
 				04879AA82B3E4A8C0074B842 /* SignUpView.swift in Sources */,
+				04879ACD2B44D7210074B842 /* UserAPI.swift in Sources */,
 				04098BE72B3B08BB00212FC6 /* RegistrationView.swift in Sources */,
 				04879AA42B3E43100074B842 /* HomeView.swift in Sources */,
 				04098BDE2B39D29600212FC6 /* LoginView.swift in Sources */,
 				04098BAC2AFD886100212FC6 /* xites_iOs_appApp.swift in Sources */,
+				04879AC72B44A6400074B842 /* Registration.swift in Sources */,
+				04879ACB2B44AF380074B842 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,6 +810,22 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -757,6 +833,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04098BE92B3B24E900212FC6 /* XCRemoteSwiftPackageReference "Auth0" */;
 			productName = Auth0;
+		};
+		04879AB82B4477850074B842 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		04879AD32B44DF3B0074B842 /* SnackBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */;
+			productName = SnackBar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

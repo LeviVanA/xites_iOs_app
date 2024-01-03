@@ -1,9 +1,20 @@
 import SwiftUI
+import SnackBar
 
 struct SignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel = SignUpViewModel()
+    @State private var user = User()
     @State private var navigateToHome = false
-
+    @State private var passwordFault = false
+    @State private var username = ""
+    @State private var password = ""
+    @State private var confirmPassword = ""
+    @State private var snackBarIsShowing = false
+    
+    @State private var showAlert = false
+    @State private var showUserAlert = false
+    var snackBar: SnackBar!
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -17,18 +28,18 @@ struct SignUpView: View {
                         .frame(width: 100.0, height: 100.0, alignment: .topLeading)
                         .ignoresSafeArea()
                         .cornerRadius(20.0)
-
-                    TextField("Username", text: $viewModel.username)
+                    
+                    TextField("Username", text: $username)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                         .padding(.top, 20)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    SecureField("Password", text: $viewModel.password)
+                    SecureField("Password", text: $password)
                         .padding(.top, 20)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    SecureField("Confirm Password", text: $viewModel.confirmPassword)
+                    SecureField("Confirm Password", text: $confirmPassword)
                         .padding(.top, 20)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
@@ -37,22 +48,53 @@ struct SignUpView: View {
                     }
                     
                     Button(action: {
-                        if viewModel.register() {
-                            navigateToHome = true
+                        showUserAlert = false
+                        if(password==confirmPassword){
+                            user.username = self.username
+                            user.password = self.password
+                            viewModel.register(register: user) { succes in
+                                if succes{
+                                    print("test")
+                                    navigateToHome = true
+                                }
+                                else{
+                                    showUserAlert = true
+                                    showAlert = true
+                                }
+                                
+                            }
+                            
                         }
+                        else {
+                            print("mismatch")
+                            showAlert = true
+                            
+                        }
+                        
+                        
                     }) {
                         Text("Register")
                             .font(.system(size: 24, weight: .bold, design: .default))
+                        
+                    }.alert(isPresented: $showAlert) {
+                        Alert(
+                            title: Text("Error"),
+                            message: Text(showUserAlert ? "User already exists" : "Password mismatch"),
+                            dismissButton: .default(Text("OK"))
+                        )
+                        
+                        
                     }
-                    .buttonStyle(MyButtonStyle())
                     .padding(.top, 20)
-
+                    .buttonStyle(MyButtonStyle())
+                    
+                    
                     Spacer()
-                }
+                    
+                    
+                }//VSTack
             }
             .padding(30)
-        
-            
         }.navigationBarBackButtonHidden(true)
     }
 }

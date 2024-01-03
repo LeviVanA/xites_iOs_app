@@ -28,27 +28,69 @@ struct RegistrationView: View {
                 .accentColor(Color(red: 1, green: 0.32941176470588235, blue: 0.28627450980392155))
             
             HStack {
-                Menu {
-                    Button(action: { project = "First" }) { Text("First") }
-                    Button(action: { project = "Second" }) { Text("Second") }
-                    Button(action: { project = "Third" }) { Text("Third") }
-                } label: {
-                    Label(title: { Text("\(project)") }, icon: { Image(systemName: "arrowtriangle.down.circle.fill") })
-                        .font(.title)
-                        .foregroundColor(Color(red: 1, green: 0.32941176470588235, blue: 0.28627450980392155))
+                if case .LOADING = viewModel.projectState {
+                    ProgressView()
+                } else if case .PROJECTSUCCESS(let projects) = viewModel.projectState{
+                    
+                    Menu {
+                        
+                        ForEach(projects) { (project:Project) in
+                            
+                            Button(action: {
+                                self.project = project.naam
+                            }) {
+                                Text(project.naam)
+                            }
+                        }
+                    } label: {
+                        Label(title: { Text("\(self.project)") }, icon: { Image(systemName: "arrowtriangle.down.circle.fill") })
+                            .font(.title)
+                            .foregroundColor(Color(red: 1, green: 0.32941176470588235, blue: 0.28627450980392155))
+                    }
+                }
+                else if case .FAILURE(let error) = viewModel.projectState {
+                    VStack(alignment: .center) {
+                        Spacer()
+                        Text(error)
+                            .font(.headline.bold())
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                    }
+                    .padding()
                 }
                 
                 Spacer()
-                
-                Menu {
-                    Button(action: { dienst = "First" }) { Text("First") }
-                    Button(action: { dienst = "Second" }) { Text("Second") }
-                    Button(action: { dienst = "Third" }) { Text("Third") }
-                } label: {
-                    Label(title: { Text("\(dienst)") }, icon: { Image(systemName: "arrowtriangle.down.circle.fill") })
-                        .font(.title)
-                        .foregroundColor(Color(red: 1, green: 0.32941176470588235, blue: 0.28627450980392155))
+                if case .LOADING = viewModel.dienstState {
+                    ProgressView()
+                } else if case .DIENSTSUCCESS(let diensten) = viewModel.dienstState{
+                    
+                    Menu {
+                        
+                        ForEach(diensten) { (dienst:Dienst) in
+                            
+                            Button(action: {
+                                self.dienst = dienst.naam
+                            }) {
+                                Text(dienst.naam)
+                            }
+                        }
+                    } label: {
+                        Label(title: { Text("\(self.dienst)") }, icon: { Image(systemName: "arrowtriangle.down.circle.fill") })
+                            .font(.title)
+                            .foregroundColor(Color(red: 1, green: 0.32941176470588235, blue: 0.28627450980392155))
+                    }
                 }
+                else if case .FAILURE(let error) = viewModel.dienstState {
+                    VStack(alignment: .center) {
+                        Spacer()
+                        Text(error)
+                            .font(.headline.bold())
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                    }
+                    .padding()
+                }
+                
             }
             
             Toggle("Factureerbaar", isOn: $toggleState)
@@ -108,17 +150,20 @@ struct RegistrationView: View {
             .alert(isPresented: $showAlert) {
                 Alert(
                     title: Text("Saved"),
-                    message: Text("The registration is saved! with \(registration.project)"),
+                    message: Text("The registration is saved! of \(registration.project)"),
                     dismissButton: .default(Text("OK"))
                 )
             }
             .padding(.top, 20)
-        }
+        }//VStack
         .padding(20)
         .background(Color.white)
         .cornerRadius(20)
         .shadow(radius: 5)
         .padding()
+        .onAppear {
+            viewModel.loadData()
+        }
     }
 }
 

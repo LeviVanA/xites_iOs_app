@@ -9,7 +9,12 @@ import Foundation
 import SwiftUI
 
 struct LoginView: View {@ObservedObject var viewModel: LoginViewModel = LoginViewModel()
+    @State private var user = User()
     @State private var navigateToHome = false
+    @State private var username = ""
+    @State private var password = ""
+    
+    @State private var showAlert = false
     
     var body: some View {
         NavigationView{
@@ -26,7 +31,7 @@ struct LoginView: View {@ObservedObject var viewModel: LoginViewModel = LoginVie
                     
                 TextField(
                     "Username",
-                    text: $viewModel.username
+                    text: $username
                 )
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -36,7 +41,7 @@ struct LoginView: View {@ObservedObject var viewModel: LoginViewModel = LoginVie
                 
                 SecureField(
                     "Password",
-                    text: $viewModel.password
+                    text: $password
                 )
                 .padding(.top, 20)
                 
@@ -46,15 +51,24 @@ struct LoginView: View {@ObservedObject var viewModel: LoginViewModel = LoginVie
                     EmptyView()
                 }
                 Button(action: {
-                    // Set navigateToHome to true when login is successful
-                    if viewModel.login() {
-                        navigateToHome = true
+                    user.username = self.username
+                    user.password = self.password
+                    viewModel.login(login: user) { succes in
+                        if succes{navigateToHome = true }
+                        else{ showAlert = true}
                     }
                 }) {
                     Text("Log in")
                         .font(.system(size: 24, weight: .bold, design: .default))
-                }.buttonStyle(MyButtonStyle())
-                    .padding(.top, 20)
+                }.alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Error"),
+                        message: Text("wrong credtials"),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
+                .padding(.top, 20)
+                .buttonStyle(MyButtonStyle())
         
                 NavigationLink(
                     destination:SignUpView()                ){
@@ -67,7 +81,7 @@ struct LoginView: View {@ObservedObject var viewModel: LoginViewModel = LoginVie
             
         }
         .padding(30)
-        }.navigationBarBackButtonHidden(true)
+        }
     }
 }
 

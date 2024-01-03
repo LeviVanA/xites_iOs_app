@@ -30,7 +30,7 @@ struct RegistrationsView: View {
                        filterUser.isEmpty || $0.user.lowercased().contains(filterUser.lowercased())
                    }) { registration in
                        userCell(registration: registration)
-                           .frame(width: geometry.size.width, height: 80)
+                           .frame( height: 80)
                    }
                }
            } else if case .FAILURE(let error) = viewModel.currentState {
@@ -44,27 +44,26 @@ struct RegistrationsView: View {
                .padding()
            }
         }//vstack
+    }.onAppear {
+        viewModel.loadData()
     }
     }//view
 }
     
 func userCell(registration: Registration) -> some View {
-    VStack(alignment: .leading) {
-        Text("datum: \(registration.date)")
-        Text("user: \(registration.user)")
-        Text("project: \(registration.project)")
+    VStack(alignment: .leading, spacing: 8) {
+        Text("Datum: \(registration.date)")
+            .font(.subheadline)
+            .multilineTextAlignment(.leading)
+        Text("User: \(registration.user)")
+            .font(.subheadline)
+            .multilineTextAlignment(.leading)
+        Text("Project: \(registration.project)")
+            .font(.subheadline)
+            .multilineTextAlignment(.leading)
     }
-    }
+}
     
-func loaderView() -> some View {
-        ZStack {
-            Color.black.opacity(0.05)
-                .ignoresSafeArea()
-            ProgressView()
-                .scaleEffect(1, anchor: .center)
-                .progressViewStyle(CircularProgressViewStyle(tint: .gray))
-        }
-    }
 struct RegistrationsView_Previews: PreviewProvider {
     static var previews: some View {
         RegistrationsView()
