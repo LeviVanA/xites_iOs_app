@@ -23,7 +23,7 @@ struct RegistrationsView: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
            if case .LOADING = viewModel.currentState {
-               loaderView()
+               ProgressView()
            } else if case .SUCCESS(let registrations) = viewModel.currentState {
                List {
                    ForEach(registrations.filter {
