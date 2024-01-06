@@ -16,7 +16,6 @@
 		04098BCA2AFD886900212FC6 /* xites_iOs_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04098BC92AFD886900212FC6 /* xites_iOs_appUITestsLaunchTests.swift */; };
 		04098BDE2B39D29600212FC6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04098BDD2B39D29600212FC6 /* LoginView.swift */; };
 		04098BE72B3B08BB00212FC6 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04098BE62B3B08BB00212FC6 /* RegistrationView.swift */; };
-		04098BEB2B3B24E900212FC6 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = 04098BEA2B3B24E900212FC6 /* Auth0 */; };
 		04879A9D2B3E3DDF0074B842 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879A9C2B3E3DDF0074B842 /* LoginViewModel.swift */; };
 		04879A9F2B3E3E540074B842 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879A9E2B3E3E540074B842 /* User.swift */; };
 		04879AA42B3E43100074B842 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AA32B3E43100074B842 /* HomeView.swift */; };
@@ -32,7 +31,6 @@
 		04879ACD2B44D7210074B842 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ACC2B44D7210074B842 /* UserAPI.swift */; };
 		04879ACF2B44D73E0074B842 /* UserAPITypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879ACE2B44D73E0074B842 /* UserAPITypes.swift */; };
 		04879AD12B44D8BF0074B842 /* UserAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04879AD02B44D8BF0074B842 /* UserAPIClient.swift */; };
-		04879AD42B44DF3B0074B842 /* SnackBar in Frameworks */ = {isa = PBXBuildFile; productRef = 04879AD32B44DF3B0074B842 /* SnackBar */; };
 		048AF09A2B3B30000008893A /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048AF0992B3B30000008893A /* Auth0.plist */; };
 		048AF09F2B3B58790008893A /* RegistrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF09E2B3B58790008893A /* RegistrationsView.swift */; };
 		048AF0A12B3B76430008893A /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AF0A02B3B76430008893A /* ButtonStyle.swift */; };
@@ -60,15 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04098BA82AFD886100212FC6 /* xites_iOs_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xites_iOs_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04098BA82AFD886100212FC6 /* xites_iOs_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = xites_iOs_app.app; path = /Users/mac/Documents/xcode_projects/xites_iOs_app/build/Debug/xites_iOs_app.app; sourceTree = "<absolute>"; };
 		04098BAB2AFD886100212FC6 /* xites_iOs_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xites_iOs_appApp.swift; sourceTree = "<group>"; };
 		04098BAD2AFD886100212FC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04098BAF2AFD886700212FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04098BB12AFD886700212FC6 /* xites_iOs_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xites_iOs_app.entitlements; sourceTree = "<group>"; };
 		04098BB32AFD886700212FC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		04098BB92AFD886800212FC6 /* xites_iOs_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xites_iOs_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04098BB92AFD886800212FC6 /* xites_iOs_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = xites_iOs_appTests.xctest; path = /Users/mac/Documents/xcode_projects/xites_iOs_app/build/Debug/xites_iOs_appTests.xctest; sourceTree = "<absolute>"; };
 		04098BBD2AFD886900212FC6 /* xites_iOs_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xites_iOs_appTests.swift; sourceTree = "<group>"; };
-		04098BC32AFD886900212FC6 /* xites_iOs_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xites_iOs_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04098BC32AFD886900212FC6 /* xites_iOs_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = xites_iOs_appUITests.xctest; path = /Users/mac/Documents/xcode_projects/xites_iOs_app/build/Debug/xites_iOs_appUITests.xctest; sourceTree = "<absolute>"; };
 		04098BC72AFD886900212FC6 /* xites_iOs_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xites_iOs_appUITests.swift; sourceTree = "<group>"; };
 		04098BC92AFD886900212FC6 /* xites_iOs_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xites_iOs_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04098BDD2B39D29600212FC6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -95,8 +93,6 @@
 		048AF0AD2B3C59BA0008893A /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		048AF0AF2B3C74BE0008893A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		048F1FA22B45ADBA00D2DB0F /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
-		048F1FA92B45E64B00D2DB0F /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
-		048F1FAF2B46257E00D2DB0F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04879AB92B4477850074B842 /* RxSwift in Frameworks */,
-				04098BEB2B3B24E900212FC6 /* Auth0 in Frameworks */,
-				04879AD42B44DF3B0074B842 /* SnackBar in Frameworks */,
-				048F1FAD2B45F74000D2DB0F /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048F1FB02B46257E00D2DB0F /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,19 +127,7 @@
 				04098BAA2AFD886100212FC6 /* xites_iOs_app */,
 				04098BBC2AFD886900212FC6 /* xites_iOs_appTests */,
 				04098BC62AFD886900212FC6 /* xites_iOs_appUITests */,
-				04098BA92AFD886100212FC6 /* Products */,
-				04879AB72B4477850074B842 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		04098BA92AFD886100212FC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				04098BA82AFD886100212FC6 /* xites_iOs_app.app */,
-				04098BB92AFD886800212FC6 /* xites_iOs_appTests.xctest */,
-				04098BC32AFD886900212FC6 /* xites_iOs_appUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		04098BAA2AFD886100212FC6 /* xites_iOs_app */ = {
@@ -179,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				04098BBD2AFD886900212FC6 /* xites_iOs_appTests.swift */,
-				048F1FA92B45E64B00D2DB0F /* LoginTest.swift */,
 			);
 			path = xites_iOs_appTests;
 			sourceTree = "<group>";
@@ -274,14 +253,6 @@
 			path = users;
 			sourceTree = "<group>";
 		};
-		04879AB72B4477850074B842 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				048F1FAF2B46257E00D2DB0F /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		048AF09B2B3B581B0008893A /* Registrations */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,10 +280,7 @@
 			);
 			name = xites_iOs_app;
 			packageProductDependencies = (
-				04098BEA2B3B24E900212FC6 /* Auth0 */,
 				04879AB82B4477850074B842 /* RxSwift */,
-				04879AD32B44DF3B0074B842 /* SnackBar */,
-				048F1FAC2B45F74000D2DB0F /* ViewInspector */,
 			);
 			productName = xites_iOs_app;
 			productReference = 04098BA82AFD886100212FC6 /* xites_iOs_app.app */;
@@ -387,12 +355,9 @@
 			);
 			mainGroup = 04098B9F2AFD886100212FC6;
 			packageReferences = (
-				04098BE92B3B24E900212FC6 /* XCRemoteSwiftPackageReference "Auth0" */,
 				04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */,
-				048F1FAB2B45F74000D2DB0F /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
-			productRefGroup = 04098BA92AFD886100212FC6 /* Products */;
+			productRefGroup = 04098B9F2AFD886100212FC6;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -467,7 +432,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04098BBE2AFD886900212FC6 /* xites_iOs_appTests.swift in Sources */,
-				048F1FAA2B45E64B00D2DB0F /* LoginTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,14 +781,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		04098BE92B3B24E900212FC6 /* XCRemoteSwiftPackageReference "Auth0" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/auth0/Auth0.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 		04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -833,44 +789,13 @@
 				minimumVersion = 6.0.0;
 			};
 		};
-		04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ahmedAlmasri/SnackBar.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
-			};
-		};
-		048F1FAB2B45F74000D2DB0F /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nalexn/ViewInspector";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.9;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04098BEA2B3B24E900212FC6 /* Auth0 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 04098BE92B3B24E900212FC6 /* XCRemoteSwiftPackageReference "Auth0" */;
-			productName = Auth0;
-		};
 		04879AB82B4477850074B842 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 04879AB62B44761B0074B842 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		04879AD32B44DF3B0074B842 /* SnackBar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 04879AD22B44DF3B0074B842 /* XCRemoteSwiftPackageReference "SnackBar" */;
-			productName = SnackBar;
-		};
-		048F1FAC2B45F74000D2DB0F /* ViewInspector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048F1FAB2B45F74000D2DB0F /* XCRemoteSwiftPackageReference "ViewInspector" */;
-			productName = ViewInspector;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

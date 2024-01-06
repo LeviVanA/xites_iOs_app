@@ -1,5 +1,4 @@
 import SwiftUI
-import SnackBar
 
 struct SignUpView: View {
     @ObservedObject var viewModel: SignUpViewModel = SignUpViewModel()
@@ -13,7 +12,6 @@ struct SignUpView: View {
     
     @State private var showAlert = false
     @State private var showUserAlert = false
-    var snackBar: SnackBar!
     
     var body: some View {
         NavigationView {
